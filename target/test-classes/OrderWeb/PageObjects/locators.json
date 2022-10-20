@@ -1,0 +1,14 @@
+{
+  "Login": {
+    "usernameTextbox": "//input[@id='ctl00_MainContent_username']",
+    "passwordTextbox": "//input[@id='ctl00_MainContent_password']",
+    "LoginButton": "//input[@id='ctl00_MainContent_login_button']"
+  },
+
+  "ListOfAllOrders": {
+    "CheckAllBtn": "//a[@id='ctl00_MainContent_btnCheckAll']",
+    "DeleteAllBtn": "//input[@id='ctl00$MainContent$btnDelete']"
+  }
+
+
+}

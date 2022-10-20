@@ -1,0 +1,21 @@
+{
+  "type": "#(browser)",
+  "executable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+  "showDriverLog": true,
+  "addOptions": [
+    "--incognito",
+    "--start-maximized",
+    "--disable-extensions",
+    "--dns-prefetch-disable",
+    "--disable-gpu",
+    "--dns-prefetch-disable"
+  ],
+  "webDriverSession": {
+    "desiredCapabilities": {
+      "browserName": "#(browser)",
+      "goog:chromeOptions": {
+        "userAutomationExtension": false
+      }
+    }
+  }
+}

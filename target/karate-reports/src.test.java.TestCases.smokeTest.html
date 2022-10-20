@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.TestCases.smokeTest</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-10-20 10:08:29 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:9]"><span>[1:9]</span> <span>WebOrder - Automation Smoke Test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/TestCases/smokeTest.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">WebOrder - Automation SmokeTest</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:9]</span>
+                <span class="scenario-name">WebOrder - Automation Smoke Test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>6651</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:9]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&#39;classpath:OrderWeb/common/login.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3488</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">OrderWeb.common.login</div>
+      </div>
+      <div class="time-cell passed">3463</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read &#39;classpath:OrderWeb/PageObjects/locators.json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">10:08:23.080 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#    * def driverConfig = { type: &#39;#(browser)&#39;, executable: &#39;#(chromePath)&#39;, showDriverLog: true, addOptions: [ &quot;--incognito&quot; , &quot;--start-maximized&quot;, &quot;--disable-extensions&quot; ,&quot;--dns-prefetch-disable&quot;, &quot;--disable-gpu&quot; ,&quot;--dns-prefetch-disable&quot;], webDriverSession: { desiredCapabilities: { browserName: &#39;#(browser)&#39;, &quot;goog:chromeOptions&quot;: { useAutomationExtension: false } } } }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = driverConfig</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>driver url</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2302</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.11">10:08:23.243 unknown driver type: #(browser), defaulting to &#39;chrome&#39;
+10:08:24.488 request:
+1 &gt; GET http://localhost:9222/json
+1 &gt; Host: localhost:9222
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_341)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:08:24.490 response time in milliseconds: 1
+1 &lt; 200
+1 &lt; Content-Length: 2538
+1 &lt; Content-Type: application/json; charset=UTF-8
+[{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/F4EC2853F5E1586CDF1C6BB6799B943C&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;F4EC2853F5E1586CDF1C6BB6799B943C&quot;,&quot;title&quot;:&quot;Google Network Speech&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/F4EC2853F5E1586CDF1C6BB6799B943C&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/B70ABC1354FFF40CD6201915AF69E0F4&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;B70ABC1354FFF40CD6201915AF69E0F4&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/B70ABC1354FFF40CD6201915AF69E0F4&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/E7BDD5B45EBECD8BF1297FB87B10DBD2&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;E7BDD5B45EBECD8BF1297FB87B10DBD2&quot;,&quot;title&quot;:&quot;Google Hangouts&quot;,&quot;type&quot;:&quot;background_page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/E7BDD5B45EBECD8BF1297FB87B10DBD2&quot;,&quot;url&quot;:&quot;chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html&quot;},{&quot;devtoolsFrontendUrl&quot;:&quot;\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;faviconUrl&quot;:&quot;data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmaWxsPSIjNDU1QTY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTFoMTh2MUgzem0xNC42Mi0xLTIuMjktNi4xYy0uMTktLjUtLjc0LS43Ny0xLjI1LS42TDEyIDRsLTIuMDktLjdjLS41MS0uMTctMS4wNi4xLTEuMjUuNkw2LjM4IDEwaDExLjI0em0tMS4xMiAzYy0xLjY2IDAtMy4wNCAxLjE2LTMuNCAyLjcxLS44NC0uMzYtMS42Mi0uMjYtMi4yLS4wMUEzLjUwMyAzLjUwMyAwIDAgMCA3LjUgMTNDNS41NyAxMyA0IDE0LjU3IDQgMTYuNVM1LjU3IDIwIDcuNSAyMGMxLjg0IDAgMy4zMy0xLjQyIDMuNDctMy4yMi4zLS4yMSAxLjA5LS42IDIuMDYuMDIuMTYgMS43OSAxLjY0IDMuMiAzLjQ3IDMuMiAxLjkzIDAgMy41LTEuNTcgMy41LTMuNVMxOC40MyAxMyAxNi41IDEzem0tOSA2YTIuNSAyLjUgMCAwIDEgMC01IDIuNSAyLjUgMCAwIDEgMCA1em05IDBhMi41IDIuNSAwIDAgMSAwLTUgMi41IDIuNSAwIDAgMSAwIDV6Ii8+PC9zdmc+&quot;,&quot;description&quot;:&quot;&quot;,&quot;id&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;title&quot;:&quot;New Incognito Tab&quot;,&quot;type&quot;:&quot;page&quot;,&quot;webSocketDebuggerUrl&quot;:&quot;ws:\/\/localhost:9222\/devtools\/page\/BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;url&quot;:&quot;chrome:\/\/newtab\/&quot;}]
+10:08:24.494 root frame id: BA41FEBDE4A2ADFC3BFD4C9BB07F1A20
+10:08:25.210 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:25.235 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{}}
+10:08:25.235 &gt;&gt; {&quot;id&quot;:2,&quot;method&quot;:&quot;Page.enable&quot;}
+10:08:25.237 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{}}
+10:08:25.238 &gt;&gt; {&quot;id&quot;:3,&quot;method&quot;:&quot;Runtime.enable&quot;}
+10:08:25.240 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://newtab&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;8901875594522415015.7044711884234221669&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}}}
+10:08:25.241 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{}}
+10:08:25.242 &gt;&gt; {&quot;id&quot;:4,&quot;method&quot;:&quot;Target.setAutoAttach&quot;,&quot;params&quot;:{&quot;autoAttach&quot;:true,&quot;waitForDebuggerOnStart&quot;:false,&quot;flatten&quot;:true}}
+10:08:25.244 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{}}
+10:08:25.244 &gt;&gt; {&quot;id&quot;:5,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:25.249 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1462604203,&quot;bounds&quot;:{&quot;left&quot;:-8,&quot;top&quot;:-8,&quot;width&quot;:1552,&quot;height&quot;:840,&quot;windowState&quot;:&quot;maximized&quot;}}}
+10:08:25.333 &gt;&gt; {&quot;id&quot;:6,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;http:\/\/secure.smartbearsoftware.com\/samples\/TestComplete12\/WebOrders\/Login.aspx&quot;}}
+10:08:25.461 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;loaderId&quot;:&quot;B8B001EDEC7379B79BB1F1C73ADA8C3B&quot;}}
+10:08:25.464 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:25.465 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:25.492 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:25.493 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;loaderId&quot;:&quot;B8B001EDEC7379B79BB1F1C73ADA8C3B&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx&quot;,&quot;domainAndRegistry&quot;:&quot;smartbearsoftware.com&quot;,&quot;securityOrigin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;InsecureScheme&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+10:08:25.494 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-3542655648734637121.3176829435206986030&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}}}
+10:08:25.539 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158716.778816}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>retry(10,2000).waitFor(Login.usernameTextbox)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.12">10:08:25.564 &gt;&gt; {&quot;id&quot;:7,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;(document.evaluate(\&quot;\/\/input[@id=&#39;ctl00_MainContent_username&#39;]\&quot;, document, null, 9, null).singleNodeValue != null)&quot;,&quot;returnByValue&quot;:true}}
+10:08:25.567 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;boolean&quot;,&quot;value&quot;:true}}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>input(Login.usernameTextbox,UserName)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.13">10:08:25.572 &gt;&gt; {&quot;id&quot;:8,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;var e = document.evaluate(\&quot;\/\/input[@id=&#39;ctl00_MainContent_username&#39;]\&quot;, document, null, 9, null).singleNodeValue; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}&quot;,&quot;returnByValue&quot;:true}}
+10:08:25.577 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;value&quot;:0,&quot;description&quot;:&quot;0&quot;}}}
+10:08:25.580 unknown character / key code: T
+10:08:25.581 &gt;&gt; {&quot;id&quot;:9,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;T&quot;}}
+10:08:25.585 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{}}
+10:08:25.586 &gt;&gt; {&quot;id&quot;:10,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.588 &lt;&lt; {&quot;id&quot;:10,&quot;result&quot;:{}}
+10:08:25.589 &gt;&gt; {&quot;id&quot;:11,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.593 &lt;&lt; {&quot;id&quot;:11,&quot;result&quot;:{}}
+10:08:25.594 &gt;&gt; {&quot;id&quot;:12,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.597 &lt;&lt; {&quot;id&quot;:12,&quot;result&quot;:{}}
+10:08:25.598 &gt;&gt; {&quot;id&quot;:13,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.598 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158716.836689}}
+10:08:25.598 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:25.599 &lt;&lt; {&quot;id&quot;:13,&quot;result&quot;:{}}
+10:08:25.600 &gt;&gt; {&quot;id&quot;:14,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.602 &lt;&lt; {&quot;id&quot;:14,&quot;result&quot;:{}}
+10:08:25.603 &gt;&gt; {&quot;id&quot;:15,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.604 &lt;&lt; {&quot;id&quot;:15,&quot;result&quot;:{}}
+10:08:25.605 &gt;&gt; {&quot;id&quot;:16,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.607 &lt;&lt; {&quot;id&quot;:16,&quot;result&quot;:{}}
+10:08:25.607 &gt;&gt; {&quot;id&quot;:17,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.612 &lt;&lt; {&quot;id&quot;:17,&quot;result&quot;:{}}
+10:08:25.612 &gt;&gt; {&quot;id&quot;:18,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.614 &lt;&lt; {&quot;id&quot;:18,&quot;result&quot;:{}}
+10:08:25.614 &gt;&gt; {&quot;id&quot;:19,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.616 &lt;&lt; {&quot;id&quot;:19,&quot;result&quot;:{}}
+10:08:25.616 &gt;&gt; {&quot;id&quot;:20,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.618 &lt;&lt; {&quot;id&quot;:20,&quot;result&quot;:{}}
+10:08:25.619 &gt;&gt; {&quot;id&quot;:21,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.621 &lt;&lt; {&quot;id&quot;:21,&quot;result&quot;:{}}
+10:08:25.621 &gt;&gt; {&quot;id&quot;:22,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:82}}
+10:08:25.623 &lt;&lt; {&quot;id&quot;:22,&quot;result&quot;:{}}
+10:08:25.624 &gt;&gt; {&quot;id&quot;:23,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:82}}
+10:08:25.628 &lt;&lt; {&quot;id&quot;:23,&quot;result&quot;:{}}
+10:08:25.629 &gt;&gt; {&quot;id&quot;:24,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;r&quot;,&quot;windowsVirtualKeyCode&quot;:82}}
+10:08:25.630 &lt;&lt; {&quot;id&quot;:24,&quot;result&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>input(Login.passwordTextbox,password)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.14">10:08:25.633 &gt;&gt; {&quot;id&quot;:25,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;var e = document.evaluate(\&quot;\/\/input[@id=&#39;ctl00_MainContent_password&#39;]\&quot;, document, null, 9, null).singleNodeValue; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}&quot;,&quot;returnByValue&quot;:true}}
+10:08:25.635 &lt;&lt; {&quot;id&quot;:25,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;number&quot;,&quot;value&quot;:0,&quot;description&quot;:&quot;0&quot;}}}
+10:08:25.636 &gt;&gt; {&quot;id&quot;:26,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.637 &lt;&lt; {&quot;id&quot;:26,&quot;result&quot;:{}}
+10:08:25.638 &gt;&gt; {&quot;id&quot;:27,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.641 &lt;&lt; {&quot;id&quot;:27,&quot;result&quot;:{}}
+10:08:25.642 &gt;&gt; {&quot;id&quot;:28,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.644 &lt;&lt; {&quot;id&quot;:28,&quot;result&quot;:{}}
+10:08:25.645 &gt;&gt; {&quot;id&quot;:29,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.646 &lt;&lt; {&quot;id&quot;:29,&quot;result&quot;:{}}
+10:08:25.647 &gt;&gt; {&quot;id&quot;:30,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.649 &lt;&lt; {&quot;id&quot;:30,&quot;result&quot;:{}}
+10:08:25.649 &gt;&gt; {&quot;id&quot;:31,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;e&quot;,&quot;windowsVirtualKeyCode&quot;:69}}
+10:08:25.651 &lt;&lt; {&quot;id&quot;:31,&quot;result&quot;:{}}
+10:08:25.652 &gt;&gt; {&quot;id&quot;:32,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.654 &lt;&lt; {&quot;id&quot;:32,&quot;result&quot;:{}}
+10:08:25.654 &gt;&gt; {&quot;id&quot;:33,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.656 &lt;&lt; {&quot;id&quot;:33,&quot;result&quot;:{}}
+10:08:25.657 &gt;&gt; {&quot;id&quot;:34,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;s&quot;,&quot;windowsVirtualKeyCode&quot;:83}}
+10:08:25.659 &lt;&lt; {&quot;id&quot;:34,&quot;result&quot;:{}}
+10:08:25.659 &gt;&gt; {&quot;id&quot;:35,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;rawKeyDown&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.661 &lt;&lt; {&quot;id&quot;:35,&quot;result&quot;:{}}
+10:08:25.661 &gt;&gt; {&quot;id&quot;:36,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;char&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.663 &lt;&lt; {&quot;id&quot;:36,&quot;result&quot;:{}}
+10:08:25.664 &gt;&gt; {&quot;id&quot;:37,&quot;method&quot;:&quot;Input.dispatchKeyEvent&quot;,&quot;params&quot;:{&quot;modifiers&quot;:0,&quot;type&quot;:&quot;keyUp&quot;,&quot;text&quot;:&quot;t&quot;,&quot;windowsVirtualKeyCode&quot;:84}}
+10:08:25.665 &lt;&lt; {&quot;id&quot;:37,&quot;result&quot;:{}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>click(Login.LoginButton).delay(1000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1020</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.15">10:08:25.668 &gt;&gt; {&quot;id&quot;:38,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/input[@id=&#39;ctl00_MainContent_login_button&#39;]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+10:08:25.671 &lt;&lt; {&quot;id&quot;:38,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;undefined&quot;}}}
+10:08:25.671 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;formSubmissionPost&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx&quot;}}
+10:08:25.671 &lt;&lt; {&quot;method&quot;:&quot;Page.frameRequestedNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;reason&quot;:&quot;formSubmissionPost&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx&quot;,&quot;disposition&quot;:&quot;currentTab&quot;}}
+10:08:25.672 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:25.675 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.117 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:26.118 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.132 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:26.133 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;loaderId&quot;:&quot;49DD671B0E5D7BC52601B1E498C7DBB8&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/&quot;,&quot;domainAndRegistry&quot;:&quot;smartbearsoftware.com&quot;,&quot;securityOrigin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;InsecureScheme&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+10:08:26.134 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:2,&quot;origin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;2360363319053529484.5626850097238755224&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}}}
+10:08:26.171 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158717.411145}}
+10:08:26.250 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158717.489052}}
+10:08:26.250 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match driver.title == &#39;Web Orders&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.16">10:08:26.689 &gt;&gt; {&quot;id&quot;:39,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.title&quot;,&quot;returnByValue&quot;:true}}
+10:08:26.690 &lt;&lt; {&quot;id&quot;:39,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;Web Orders&quot;}}}
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:9]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read &#39;classpath:OrderWeb/PageObjects/locators.json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def Step1 = &quot;Log into WebOrder using provided credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>def Step2 = &quot;Select check all button from list of all orders&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>click(ListOfAllOrders.CheckAllBtn).delay(100)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">119</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">10:08:26.712 &gt;&gt; {&quot;id&quot;:40,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/a[@id=&#39;ctl00_MainContent_btnCheckAll&#39;]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+10:08:26.714 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;anchorClick&quot;,&quot;url&quot;:&quot;javascript:__doPostBack(&#39;ctl00$MainContent$btnCheckAll&#39;,&#39;&#39;)&quot;}}
+10:08:26.714 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.715 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.715 &lt;&lt; {&quot;id&quot;:40,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;undefined&quot;}}}
+10:08:26.716 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.717 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;formSubmissionPost&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx&quot;}}
+10:08:26.717 &lt;&lt; {&quot;method&quot;:&quot;Page.frameRequestedNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;reason&quot;:&quot;formSubmissionPost&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx&quot;,&quot;disposition&quot;:&quot;currentTab&quot;}}
+10:08:26.718 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.721 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.769 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:26.770 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:26.780 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{}}
+10:08:26.781 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;,&quot;loaderId&quot;:&quot;495179A40945E0876AEBC96F274D74E5&quot;,&quot;url&quot;:&quot;http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx&quot;,&quot;domainAndRegistry&quot;:&quot;smartbearsoftware.com&quot;,&quot;securityOrigin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameStatus&quot;:{&quot;adFrameType&quot;:&quot;none&quot;},&quot;secureContextType&quot;:&quot;InsecureScheme&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[]},&quot;type&quot;:&quot;Navigation&quot;}}
+10:08:26.781 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:3,&quot;origin&quot;:&quot;http://secure.smartbearsoftware.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-8180880624885293888.5211725654966499050&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}}}
+10:08:26.782 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158718.018751}}
+10:08:26.785 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:158718.019135}}
+10:08:26.786 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>click(ListOfAllOrders.DeleteAllBtn)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3041</div>
+  </div>
+
+   
+  
+  
+
+  <div class="embed" data-parent="0.14"><img src="src.test.java.TestCases.smokeTest_1_1666274909968.png"/></div>
+
+  <div class="preformatted" data-parent="0.14">10:08:26.831 &gt;&gt; {&quot;id&quot;:41,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/input[@id=&#39;ctl00$MainContent$btnDelete&#39;]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+10:08:26.833 &lt;&lt; {&quot;id&quot;:41,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.1&quot;},&quot;exceptionDetails&quot;:{&quot;exceptionId&quot;:1,&quot;text&quot;:&quot;Uncaught&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:104,&quot;scriptId&quot;:&quot;17&quot;,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;17&quot;,&quot;url&quot;:&quot;&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:104}]},&quot;exception&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.2&quot;}}}}
+10:08:26.834 devtools error: [id: 41, result: [type: MAP, value: {type=object, subtype=error, className=TypeError, description=TypeError: Cannot read properties of null (reading &#39;click&#39;)
+    at &lt;anonymous&gt;:1:105, objectId=-1502998028474593221.3.1}]]
+10:08:26.834 js eval failed once:document.evaluate(&quot;//input[@id=&#39;ctl00$MainContent$btnDelete&#39;]&quot;, document, null, 9, null).singleNodeValue.click(), error: {&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.1&quot;}
+10:08:29.846 &gt;&gt; {&quot;id&quot;:42,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/input[@id=&#39;ctl00$MainContent$btnDelete&#39;]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+10:08:29.848 &lt;&lt; {&quot;id&quot;:42,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.3&quot;},&quot;exceptionDetails&quot;:{&quot;exceptionId&quot;:2,&quot;text&quot;:&quot;Uncaught&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:104,&quot;scriptId&quot;:&quot;17&quot;,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;17&quot;,&quot;url&quot;:&quot;&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:104}]},&quot;exception&quot;:{&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.4&quot;}}}}
+10:08:29.848 devtools error: [id: 42, result: [type: MAP, value: {type=object, subtype=error, className=TypeError, description=TypeError: Cannot read properties of null (reading &#39;click&#39;)
+    at &lt;anonymous&gt;:1:105, objectId=-1502998028474593221.3.3}]]
+10:08:29.848 js eval failed twice:document.evaluate(&quot;//input[@id=&#39;ctl00$MainContent$btnDelete&#39;]&quot;, document, null, 9, null).singleNodeValue.click(), error: {&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.3&quot;}
+10:08:29.871 src/test/java/TestCases/smokeTest.feature:14
+* click(ListOfAllOrders.DeleteAllBtn)
+&gt;&gt;&gt;&gt; js failed:
+01: click(ListOfAllOrders.DeleteAllBtn)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: js eval failed twice:document.evaluate(&quot;//input[@id=&#39;ctl00$MainContent$btnDelete&#39;]&quot;, document, null, 9, null).singleNodeValue.click(), error: {&quot;type&quot;:&quot;object&quot;,&quot;subtype&quot;:&quot;error&quot;,&quot;className&quot;:&quot;TypeError&quot;,&quot;description&quot;:&quot;TypeError: Cannot read properties of null (reading &#39;click&#39;)\n    at &lt;anonymous&gt;:1:105&quot;,&quot;objectId&quot;:&quot;-1502998028474593221.3.3&quot;}
+- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:271)
+- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:256)
+- com.intuit.karate.driver.DevToolsDriver.click(DevToolsDriver.java:477)
+- &lt;js&gt;.:anonymous(Unnamed:1)
+
+src/test/java/TestCases/smokeTest.feature:14
+10:08:29.871 &gt;&gt; {&quot;id&quot;:43,&quot;method&quot;:&quot;Page.captureScreenshot&quot;}
+10:08:29.966 &lt;&lt; {&quot;id&quot;:43,&quot;result&quot;:{&quot;data&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAAB4AAAAN1CAYAAACesuZ/AAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XtYlHX+//EXLYxtHDbYdPyqZEIlbIkJeMhFcVNMwS0tzU6WppXlaTV1TS219bRmmZZlZR5bW03TNQWTbFXM8ISJlqeASmkddcGvQtfX4Xdd/P6YGbgHZmBAFByej+u6r2bm/tyf+30fuO2a97w/H5/IhPuLBQAAAAAAAAAAAAC47t1Q2wEAAAAAAAAAAAAAAGoGCWAAAAAAAAAAAAAA8BIkgAEAAAAAAAAAAADAS5AABgAAAAAAAAAAAAAvQQIYAAAAAAAAAAAAALyEr4qLazuGmuHjU9sRAKiLvOUZBwAAAAAAAAAA4AFfb0mNkP4F4Iq3POMAAAAAAAAAAAA8QQUwAO/mLc84AAAAAAAAAAAAD1ABDMCrecszDgAAAAAAAAAAwBM31HYAAAAAAAAAAAAAAICa4T1DQAOAKzzjAAAAAAAAAABAPUICGIB34xkHAAAAAAAAAADqEa+ZAxgAXOEZBwAAAAAAAAAA6hMqgAF4N55xAAAAAAAAAACgHrmhtgMAAAAAAAAAAAAAANQMKoABeDeecQAAAAAAAAAAoB5hDmAAXo1nHAAAAAAAAAAAqE98i6mOA+DFeMYBAAAAAAAAAFx7WB9vGq72gZJ+2qI7nvp7bQeEapq94t9KyHtHMX9ZV9uh1AkMAQ3Au/GMAwAAAAAAAIDr0uyV2/Vwc0kq0J4FvfTk2oo/f3r+Jk1uEyDpZ63r/JQmVHWH3vJ9ct+3dGDkPQqqqM2lbzU96S9afuU708ebDUn0AbOvuEdbt4ZjqEq/lV5DW7yRP7yjmFFrrzDIq+fp+Zs0+fYfqn2NfGs8IgAAAAAAAAAAAOAKTfj+Zz3c/FZJAbrlDsenfdUsxPE6QJGd+kpr10rqq4TbA2wfX8rT0WsdbF2y9i+KKcltTtCWnT0ULtVsgvZqW3tG5 ...
+10:08:29.971 &gt;&gt; {&quot;id&quot;:44,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;BA41FEBDE4A2ADFC3BFD4C9BB07F1A20&quot;}}
+10:08:29.973 &lt;&lt; {&quot;id&quot;:44,&quot;result&quot;:{&quot;success&quot;:true}}
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
