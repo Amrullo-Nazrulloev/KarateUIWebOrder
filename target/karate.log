@@ -805,3 +805,191 @@ src/test/java/TestCases/smokeTest.feature:14
 10:08:29.978 [main] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1666274903250
 10:08:30.037 [chrome_1666274903250] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\nazam\IdeaProjects\MasterK\target\chrome_1666274903250, --disable-popup-blocking, --incognito, --start-maximized, --disable-extensions, --dns-prefetch-disable, --disable-gpu, --dns-prefetch-disable] working dir: target\chrome_1666274903250
 10:08:30.981 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/TestCases/smokeTest.feature
+14:14:02.103 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:14:02.114 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1666289642112
+14:14:02.177 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 9 - ^WebOrder \- Automation Smoke Test$
+14:14:03.830 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:04.006 [main] WARN  com.intuit.karate - unknown driver type: #(browser), defaulting to 'chrome'
+14:14:04.020 [main] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+14:14:04.021 [chrome_1666289644018] DEBUG c.i.k.driver.chrome_1666289644018 - command: [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\nazam\IdeaProjects\MasterK\target\chrome_1666289644018, --disable-popup-blocking, --incognito, --start-maximized, --disable-extensions, --dns-prefetch-disable, --disable-gpu, --dns-prefetch-disable], working dir: target\chrome_1666289644018
+14:14:04.028 [main] DEBUG c.i.k.driver.chrome_1666289644018 - poll attempt #0 for port to be ready - localhost:9222
+14:14:04.508 [chrome_1666289644018-out] DEBUG c.i.k.driver.chrome_1666289644018 - 
+14:14:04.509 [chrome_1666289644018-out] DEBUG c.i.k.driver.chrome_1666289644018 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/d02a4363-60db-4410-9bde-bc55516d1696
+14:14:05.682 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_341)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:05.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 47
+1 < 200
+1 < Content-Length: 2538
+1 < Content-Type: application/json; charset=UTF-8
+[{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/22BEE16762DA534E8E9F84C058280C08","description":"","id":"22BEE16762DA534E8E9F84C058280C08","title":"Google Network Speech","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/22BEE16762DA534E8E9F84C058280C08","url":"chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/F01DCAFD0356D5F1C58926768C2A428B","description":"","id":"F01DCAFD0356D5F1C58926768C2A428B","title":"Google Hangouts","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/F01DCAFD0356D5F1C58926768C2A428B","url":"chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/3885FC01F2DCCDFC6A72BF254BA863F6","description":"","id":"3885FC01F2DCCDFC6A72BF254BA863F6","title":"Google Hangouts","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/3885FC01F2DCCDFC6A72BF254BA863F6","url":"chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/2035CC4C987FD68E39DC280FDDF95D0A","faviconUrl":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmaWxsPSIjNDU1QTY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTFoMTh2MUgzem0xNC42Mi0xLTIuMjktNi4xYy0uMTktLjUtLjc0LS43Ny0xLjI1LS42TDEyIDRsLTIuMDktLjdjLS41MS0uMTctMS4wNi4xLTEuMjUuNkw2LjM4IDEwaDExLjI0em0tMS4xMiAzYy0xLjY2IDAtMy4wNCAxLjE2LTMuNCAyLjcxLS44NC0uMzYtMS42Mi0uMjYtMi4yLS4wMUEzLjUwMyAzLjUwMyAwIDAgMCA3LjUgMTNDNS41NyAxMyA0IDE0LjU3IDQgMTYuNVM1LjU3IDIwIDcuNSAyMGMxLjg0IDAgMy4zMy0xLjQyIDMuNDctMy4yMi4zLS4yMSAxLjA5LS42IDIuMDYuMDIuMTYgMS43OSAxLjY0IDMuMiAzLjQ3IDMuMiAxLjkzIDAgMy41LTEuNTcgMy41LTMuNVMxOC40MyAxMyAxNi41IDEzem0tOSA2YTIuNSAyLjUgMCAwIDEgMC01IDIuNSAyLjUgMCAwIDEgMCA1em05IDBhMi41IDIuNSAwIDAgMSAwLTUgMi41IDIuNSAwIDAgMSAwIDV6Ii8+PC9zdmc+","description":"","id":"2035CC4C987FD68E39DC280FDDF95D0A","title":"New Incognito Tab","type":"page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/2035CC4C987FD68E39DC280FDDF95D0A","url":"chrome:\/\/newtab\/"}]
+14:14:05.742 [main] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1180 ms - http://localhost:9222/json
+14:14:05.744 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_341)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:05.746 [main] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 200
+1 < Content-Length: 2538
+1 < Content-Type: application/json; charset=UTF-8
+[{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/22BEE16762DA534E8E9F84C058280C08","description":"","id":"22BEE16762DA534E8E9F84C058280C08","title":"Google Network Speech","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/22BEE16762DA534E8E9F84C058280C08","url":"chrome-extension:\/\/neajdppkdcdipfabeoofebfddakdcjhd\/_generated_background_page.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/F01DCAFD0356D5F1C58926768C2A428B","description":"","id":"F01DCAFD0356D5F1C58926768C2A428B","title":"Google Hangouts","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/F01DCAFD0356D5F1C58926768C2A428B","url":"chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/3885FC01F2DCCDFC6A72BF254BA863F6","description":"","id":"3885FC01F2DCCDFC6A72BF254BA863F6","title":"Google Hangouts","type":"background_page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/3885FC01F2DCCDFC6A72BF254BA863F6","url":"chrome-extension:\/\/nkeimhogjdpnpccoofpliimaahmaaome\/background.html"},{"devtoolsFrontendUrl":"\/devtools\/inspector.html?ws=localhost:9222\/devtools\/page\/2035CC4C987FD68E39DC280FDDF95D0A","faviconUrl":"data:image\/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmaWxsPSIjNDU1QTY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTFoMTh2MUgzem0xNC42Mi0xLTIuMjktNi4xYy0uMTktLjUtLjc0LS43Ny0xLjI1LS42TDEyIDRsLTIuMDktLjdjLS41MS0uMTctMS4wNi4xLTEuMjUuNkw2LjM4IDEwaDExLjI0em0tMS4xMiAzYy0xLjY2IDAtMy4wNCAxLjE2LTMuNCAyLjcxLS44NC0uMzYtMS42Mi0uMjYtMi4yLS4wMUEzLjUwMyAzLjUwMyAwIDAgMCA3LjUgMTNDNS41NyAxMyA0IDE0LjU3IDQgMTYuNVM1LjU3IDIwIDcuNSAyMGMxLjg0IDAgMy4zMy0xLjQyIDMuNDctMy4yMi4zLS4yMSAxLjA5LS42IDIuMDYuMDIuMTYgMS43OSAxLjY0IDMuMiAzLjQ3IDMuMiAxLjkzIDAgMy41LTEuNTcgMy41LTMuNVMxOC40MyAxMyAxNi41IDEzem0tOSA2YTIuNSAyLjUgMCAwIDEgMC01IDIuNSAyLjUgMCAwIDEgMCA1em05IDBhMi41IDIuNSAwIDAgMSAwLTUgMi41IDIuNSAwIDAgMSAwIDV6Ii8+PC9zdmc+","description":"","id":"2035CC4C987FD68E39DC280FDDF95D0A","title":"New Incognito Tab","type":"page","webSocketDebuggerUrl":"ws:\/\/localhost:9222\/devtools\/page\/2035CC4C987FD68E39DC280FDDF95D0A","url":"chrome:\/\/newtab\/"}]
+14:14:05.751 [main] DEBUG c.intuit.karate.driver.DriverOptions - root frame id: 2035CC4C987FD68E39DC280FDDF95D0A
+14:14:06.642 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+14:14:06.645 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":1,"method":"Target.activateTarget","params":{"targetId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:06.676 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":1,"result":{}}
+14:14:06.677 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":2,"method":"Page.enable"}
+14:14:06.680 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":2,"result":{}}
+14:14:06.681 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":3,"method":"Runtime.enable"}
+14:14:06.684 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://newtab","name":"","uniqueId":"9105776758901876366.-4422351097148194618","auxData":{"isDefault":true,"type":"default","frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}}}
+14:14:06.686 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":3,"result":{}}
+14:14:06.687 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":4,"method":"Target.setAutoAttach","params":{"autoAttach":true,"waitForDebuggerOnStart":false,"flatten":true}}
+14:14:06.689 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":4,"result":{}}
+14:14:06.690 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":5,"method":"Browser.getWindowForTarget","params":{"targetId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:06.692 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":5,"result":{"windowId":136024586,"bounds":{"left":-8,"top":-8,"width":1552,"height":840,"windowState":"maximized"}}}
+14:14:06.800 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":6,"method":"Page.navigate","params":{"url":"http:\/\/secure.smartbearsoftware.com\/samples\/TestComplete12\/WebOrders\/Login.aspx"}}
+14:14:06.936 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":6,"result":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","loaderId":"757D621AAE1F59865E3ADCA6BF928985"}}
+14:14:06.939 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:06.940 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:06.972 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:06.973 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"2035CC4C987FD68E39DC280FDDF95D0A","loaderId":"757D621AAE1F59865E3ADCA6BF928985","url":"http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx","domainAndRegistry":"smartbearsoftware.com","securityOrigin":"http://secure.smartbearsoftware.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"InsecureScheme","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"}}
+14:14:06.974 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"http://secure.smartbearsoftware.com","name":"","uniqueId":"7065688057262572063.-1418574889598125425","auxData":{"isDefault":true,"type":"default","frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}}}
+14:14:06.976 [chrome_1666289644018-out] DEBUG c.i.k.driver.chrome_1666289644018 - [17372:1576:1020/141406.976:ERROR:device_event_log_impl.cc(214)] [14:14:06.975] USB: usb_service_win.cc:415 Could not read device interface GUIDs: The system cannot find the file specified. (0x2)
+14:14:07.031 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":173458.268337}}
+14:14:07.057 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":7,"method":"Runtime.evaluate","params":{"expression":"(document.evaluate(\"\/\/input[@id='ctl00_MainContent_username']\", document, null, 9, null).singleNodeValue != null)","returnByValue":true}}
+14:14:07.060 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":7,"result":{"result":{"type":"boolean","value":true}}}
+14:14:07.065 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":8,"method":"Runtime.evaluate","params":{"expression":"var e = document.evaluate(\"\/\/input[@id='ctl00_MainContent_username']\", document, null, 9, null).singleNodeValue; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+14:14:07.070 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":8,"result":{"result":{"type":"number","value":0,"description":"0"}}}
+14:14:07.071 [main] WARN  c.intuit.karate.driver.DriverOptions - unknown character / key code: T
+14:14:07.072 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":9,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"T"}}
+14:14:07.076 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":9,"result":{}}
+14:14:07.077 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":10,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.081 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":10,"result":{}}
+14:14:07.083 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":11,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.086 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.loadEventFired","params":{"timestamp":173458.322167}}
+14:14:07.087 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:07.089 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":11,"result":{}}
+14:14:07.090 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":12,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.092 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":12,"result":{}}
+14:14:07.093 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":13,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.095 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":13,"result":{}}
+14:14:07.096 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":14,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.101 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":14,"result":{}}
+14:14:07.102 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":15,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.104 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":15,"result":{}}
+14:14:07.104 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":16,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.106 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":16,"result":{}}
+14:14:07.107 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":17,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.110 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":17,"result":{}}
+14:14:07.111 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":18,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.113 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":18,"result":{}}
+14:14:07.115 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":19,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.118 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":19,"result":{}}
+14:14:07.120 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":20,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.123 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":20,"result":{}}
+14:14:07.124 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":21,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.127 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":21,"result":{}}
+14:14:07.129 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":22,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"r","windowsVirtualKeyCode":82}}
+14:14:07.132 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":22,"result":{}}
+14:14:07.133 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":23,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"r","windowsVirtualKeyCode":82}}
+14:14:07.137 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":23,"result":{}}
+14:14:07.139 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":24,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"r","windowsVirtualKeyCode":82}}
+14:14:07.142 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":24,"result":{}}
+14:14:07.146 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":25,"method":"Runtime.evaluate","params":{"expression":"var e = document.evaluate(\"\/\/input[@id='ctl00_MainContent_password']\", document, null, 9, null).singleNodeValue; e.focus(); try { e.selectionStart = e.selectionEnd = e.value.length } catch(x) {}","returnByValue":true}}
+14:14:07.152 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":25,"result":{"result":{"type":"number","value":0,"description":"0"}}}
+14:14:07.154 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":26,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.156 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":26,"result":{}}
+14:14:07.157 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":27,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.162 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":27,"result":{}}
+14:14:07.163 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":28,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.166 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":28,"result":{}}
+14:14:07.168 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":29,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.170 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":29,"result":{}}
+14:14:07.171 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":30,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.175 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":30,"result":{}}
+14:14:07.176 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":31,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"e","windowsVirtualKeyCode":69}}
+14:14:07.179 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":31,"result":{}}
+14:14:07.180 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":32,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.183 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":32,"result":{}}
+14:14:07.184 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":33,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.188 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":33,"result":{}}
+14:14:07.189 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":34,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"s","windowsVirtualKeyCode":83}}
+14:14:07.191 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":34,"result":{}}
+14:14:07.192 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":35,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"rawKeyDown","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.196 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":35,"result":{}}
+14:14:07.197 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":36,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"char","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.201 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":36,"result":{}}
+14:14:07.202 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":37,"method":"Input.dispatchKeyEvent","params":{"modifiers":0,"type":"keyUp","text":"t","windowsVirtualKeyCode":84}}
+14:14:07.204 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":37,"result":{}}
+14:14:07.208 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":38,"method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/input[@id='ctl00_MainContent_login_button']\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+14:14:07.213 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":38,"result":{"result":{"type":"undefined"}}}
+14:14:07.214 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","delay":0,"reason":"formSubmissionPost","url":"http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx"}}
+14:14:07.215 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameRequestedNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","reason":"formSubmissionPost","url":"http://secure.smartbearsoftware.com/samples/TestComplete12/WebOrders/Login.aspx","disposition":"currentTab"}}
+14:14:07.216 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:07.218 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:07.606 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:07.607 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:07.622 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:07.623 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"2035CC4C987FD68E39DC280FDDF95D0A","loaderId":"64D07E29D40286AD2B42EFBF51A19631","url":"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/","domainAndRegistry":"smartbearsoftware.com","securityOrigin":"http://secure.smartbearsoftware.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"InsecureScheme","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"}}
+14:14:07.624 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":2,"origin":"http://secure.smartbearsoftware.com","name":"","uniqueId":"4452644533859788430.-1091915739336787180","auxData":{"isDefault":true,"type":"default","frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}}}
+14:14:07.660 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":173458.900937}}
+14:14:07.739 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.loadEventFired","params":{"timestamp":173458.978364}}
+14:14:07.740 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.238 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":39,"method":"Runtime.evaluate","params":{"expression":"document.title","returnByValue":true}}
+14:14:08.240 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":39,"result":{"result":{"type":"string","value":"Web Orders"}}}
+14:14:08.268 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":40,"method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/a[@id='ctl00_MainContent_btnCheckAll']\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+14:14:08.271 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","delay":0,"reason":"anchorClick","url":"javascript:__doPostBack('ctl00$MainContent$btnCheckAll','')"}}
+14:14:08.272 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.273 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.273 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":40,"result":{"result":{"type":"undefined"}}}
+14:14:08.274 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.275 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","delay":0,"reason":"formSubmissionPost","url":"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx"}}
+14:14:08.276 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameRequestedNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A","reason":"formSubmissionPost","url":"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx","disposition":"currentTab"}}
+14:14:08.276 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.281 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.331 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:08.332 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.354 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{}}
+14:14:08.354 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"2035CC4C987FD68E39DC280FDDF95D0A","loaderId":"CB0A7B1297E43D010E12CE30F674BF5F","url":"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/Default.aspx","domainAndRegistry":"smartbearsoftware.com","securityOrigin":"http://secure.smartbearsoftware.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"InsecureScheme","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"}}
+14:14:08.355 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":3,"origin":"http://secure.smartbearsoftware.com","name":"","uniqueId":"3525159541591049383.-7270286693773842871","auxData":{"isDefault":true,"type":"default","frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}}}
+14:14:08.357 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":173459.58887}}
+14:14:08.358 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.loadEventFired","params":{"timestamp":173459.589406}}
+14:14:08.359 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:08.379 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":41,"method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/input[@id='ctl00$MainContent$btnDelete']\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+14:14:08.383 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":41,"result":{"result":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.1"},"exceptionDetails":{"exceptionId":1,"text":"Uncaught","lineNumber":0,"columnNumber":104,"scriptId":"17","stackTrace":{"callFrames":[{"functionName":"","scriptId":"17","url":"","lineNumber":0,"columnNumber":104}]},"exception":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.2"}}}}
+14:14:08.384 [nioEventLoopGroup-2-1] WARN  c.intuit.karate.driver.DriverOptions - devtools error: [id: 41, result: [type: MAP, value: {type=object, subtype=error, className=TypeError, description=TypeError: Cannot read properties of null (reading 'click')
+    at <anonymous>:1:105, objectId=7115260616803823495.3.1}]]
+14:14:08.384 [main] WARN  c.intuit.karate.driver.DriverOptions - js eval failed once:document.evaluate("//input[@id='ctl00$MainContent$btnDelete']", document, null, 9, null).singleNodeValue.click(), error: {"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.1"}
+14:14:11.397 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":42,"method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/input[@id='ctl00$MainContent$btnDelete']\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+14:14:11.402 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":42,"result":{"result":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.3"},"exceptionDetails":{"exceptionId":2,"text":"Uncaught","lineNumber":0,"columnNumber":104,"scriptId":"17","stackTrace":{"callFrames":[{"functionName":"","scriptId":"17","url":"","lineNumber":0,"columnNumber":104}]},"exception":{"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.4"}}}}
+14:14:11.402 [nioEventLoopGroup-2-1] WARN  c.intuit.karate.driver.DriverOptions - devtools error: [id: 42, result: [type: MAP, value: {type=object, subtype=error, className=TypeError, description=TypeError: Cannot read properties of null (reading 'click')
+    at <anonymous>:1:105, objectId=7115260616803823495.3.3}]]
+14:14:11.403 [main] ERROR c.intuit.karate.driver.DriverOptions - js eval failed twice:document.evaluate("//input[@id='ctl00$MainContent$btnDelete']", document, null, 9, null).singleNodeValue.click(), error: {"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.3"}
+14:14:11.423 [main] ERROR com.intuit.karate - src/test/java/TestCases/smokeTest.feature:14
+* click(ListOfAllOrders.DeleteAllBtn)
+>>>> js failed:
+01: click(ListOfAllOrders.DeleteAllBtn)
+<<<<
+org.graalvm.polyglot.PolyglotException: js eval failed twice:document.evaluate("//input[@id='ctl00$MainContent$btnDelete']", document, null, 9, null).singleNodeValue.click(), error: {"type":"object","subtype":"error","className":"TypeError","description":"TypeError: Cannot read properties of null (reading 'click')\n    at <anonymous>:1:105","objectId":"7115260616803823495.3.3"}
+- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:271)
+- com.intuit.karate.driver.DevToolsDriver.eval(DevToolsDriver.java:256)
+- com.intuit.karate.driver.DevToolsDriver.click(DevToolsDriver.java:477)
+- <js>.:anonymous(Unnamed:1)
+
+src/test/java/TestCases/smokeTest.feature:14
+14:14:11.423 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":43,"method":"Page.captureScreenshot"}
+14:14:11.552 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":43,"result":{"data":"iVBORw0KGgoAAAANSUhEUgAAB4AAAAN1CAYAAACesuZ/AAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XtYlHX+//EXLYxtHDbYdPyqZEIlbIkJeMhFcVNMwS0tzU6WppXlaTV1TS219bRmmZZlZR5bW03TNQWTbFXM8ISJlqeASmkddcGvQtfX4Xdd/P6YGbgHZmBAFByej+u6r2bm/tyf+30fuO2a97w/H5/IhPuLBQAAAAAAAAAAAAC47t1Q2wEAAAAAAAAAAAAAAGoGCWAAAAAAAAAAAAAA8BIkgAEAAAAAAAAAAADAS5AABgAAAAAAAAAAAAAvQQIYAAAAAAAAAAAAALyEr4qLazuGmuHjU9sRAKiLvOUZBwAAAAAAAAAA4AFfb0mNkP4F4Iq3POMAAAAAAAAAAAA8QQUwAO/mLc84AAAAAAAAAAAAD1ABDMCrecszDgAAAAAAAAAAwBM31HYAAAAAAAAAAAAAAICa4T1DQAOAKzzjAAAAAAAAAABAPUICGIB34xkHAAAAAAAAAADqEa+ZAxgAXOEZBwAAAAAAAAAA6hMqgAF4N55xAAAAAAAAAACgHrmhtgMAAAAAAAAAAAAAANQMKoABeDeecQAAAAAAAAAAoB5hDmAAXo1nHAAAAAAAAAAAqE98i6mOA+DFeMYBAAAAAAAAAFx7WB9vGq72gZJ+2qI7nvp7bQeEapq94t9KyHtHMX9ZV9uh1AkMAQ3Au/GMAwAAAAAAAIDr0uyV2/Vwc0kq0J4FvfTk2oo/f3r+Jk1uEyDpZ63r/JQmVHWH3vJ9ct+3dGDkPQqqqM2lbzU96S9afuU708ebDUn0AbOvuEdbt4ZjqEq/lV5DW7yRP7yjmFFrrzDIq+fp+Zs0+fYfqn2NfGs8IgAAAAAAAAAAAOAKTfj+Zz3c/FZJAbrlDsenfdUsxPE6QJGd+kpr10rqq4TbA2wfX8rT0WsdbF2y9i+KKcltTtCWnT0ULtVsgvZqW3tG5 ...
+14:14:11.559 [main] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":44,"method":"Target.closeTarget","params":{"targetId":"2035CC4C987FD68E39DC280FDDF95D0A"}}
+14:14:11.562 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":44,"result":{"success":true}}
+14:14:11.568 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+14:14:11.569 [main] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1666289644018
+14:14:11.716 [chrome_1666289644018] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [C:/Program Files/Google/Chrome/Application/chrome.exe, --remote-debugging-port=9222, --no-first-run, --user-data-dir=C:\Users\nazam\IdeaProjects\MasterK\target\chrome_1666289644018, --disable-popup-blocking, --incognito, --start-maximized, --disable-extensions, --dns-prefetch-disable, --disable-gpu, --dns-prefetch-disable] working dir: target\chrome_1666289644018
+14:14:13.204 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/TestCases/smokeTest.feature
